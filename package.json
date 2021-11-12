@@ -7,6 +7,7 @@
   "author": "heyset <c.inaciomatheus@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prepush": "if git-branch-is staging; then git push heroku-staging staging:master; fi",
     "dev": "nodemon -r dotenv/config index.js",
     "start": "node index.js"
   },
