@@ -1,1 +1,1 @@
-web: node indexProfile.js
+web: node indexProcfile.js
